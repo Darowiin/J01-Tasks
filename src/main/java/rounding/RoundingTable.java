@@ -33,8 +33,8 @@ public class RoundingTable {
      */
     public void print() {
         printHeader();
-        for (double v : values) {
-            printRow(v);
+        for (double value : values) {
+            printRow(value);
         }
         printFooter();
     }
@@ -52,15 +52,15 @@ public class RoundingTable {
     /**
      * Печатает одну строку таблицы с результатами вызовов методов округления.
      *
-     * @param v значение, для которого выполняются операции округления
+     * @param value значение, для которого выполняются операции округления
      */
-    private void printRow(double v) {
+    private void printRow(double value) {
         System.out.printf("│ %-10s │ %-10s │ %-10s │ %-10s │ %-10s │%n",
-                v,
-                Math.ceil(v),
-                Math.floor(v),
-                Math.round(v),
-                Math.rint(v)
+                value,
+                Math.ceil(value),
+                Math.floor(value),
+                Math.round(value),
+                Math.rint(value)
         );
     }
 
