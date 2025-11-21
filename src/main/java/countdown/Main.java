@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Countdown countdown = new Countdown();
-        LocalDateTime target = null;
+        LocalDateTime target;
 
         if (args.length > 0) {
             target = parseArgument(String.join(" ", args));
