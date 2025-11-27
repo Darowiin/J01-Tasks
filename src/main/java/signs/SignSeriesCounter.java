@@ -21,11 +21,8 @@ public class SignSeriesCounter {
 
         for (int v : array) {
             int s = Integer.compare(v, 0);
-            if (s == 0) {
-                if (currentLength > maxLength) maxLength = currentLength;
-                currentLength = 0;
-                currentSign = 0;
-            } else if (currentLength == 0) {
+
+            if (currentLength == 0) {
                 currentLength = 1;
                 currentSign = s;
             } else if (s == currentSign) {
